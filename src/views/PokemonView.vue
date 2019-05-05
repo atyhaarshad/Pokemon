@@ -1,4 +1,4 @@
-<template>
+<template id="template">
 <div id="div-list">
  <PokemonList :pokemons="pokemons"/>
 </div>
@@ -33,6 +33,10 @@ export default {
   flex-direction: column, row;
   padding-top: 500px;
   font-family: 'VT323', monospace;
+}
+
+#template{
+  background-color: #005DAF;
 }
 
 </style>

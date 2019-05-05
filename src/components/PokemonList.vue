@@ -1,4 +1,4 @@
-<template lang="html">
+<template id="template" lang="html">
 <div class="pokemon-list" v-if="pokemons.length > 0">
   <input id="searchBar" type="text" v-model="searchQuery" placeholder="Search a pokemon!" ></input>
   <PokemonListItem v-for="pokemon in filteredPokemons()" :pokemon="pokemon"/>
@@ -54,5 +54,9 @@ export default {
   width: 50%;
     /* display: block; */
   font-family: 'VT323', monospace;
+}
+
+#template{
+  background-color: #005DAF;
 }
 </style>
