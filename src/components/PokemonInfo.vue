@@ -2,7 +2,6 @@
  <div id="pokemon-info" v-if="pokemon && pokemonInfo">
    <!-- <h2>Name: {{pokemon.name.substring(0, 1).toUpperCase() + pokemon.name.substring(1)}}</h2> -->
    <img id="poke-pic" @mouseover="changeSprite()" @mouseleave="changeSprite()" :src="this.sprite"/>
-
 <p>Abilities:</p><li v-for="ability in pokemonInfo.abilities">{{ability.ability.name}}</li>
 <p>Base Exp: {{pokemonInfo.base_experience}}</p>
 <p>Height: {{pokemonInfo.height}}</p>
@@ -84,4 +83,11 @@ export default {
 color: #005DAF;
 background-color: #ffcc03;
 }
+
+#all-moves {
+color: #005DAF;
+background-color: #ffcc03;
+}
+
+
 </style>

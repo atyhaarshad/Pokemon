@@ -21,7 +21,7 @@ export default {
     .then(res => res.json())
     .then(pokemon => {
 
-      this.pokemons = pokemon.results
+      this.pokemons = pokemon.results;
     })
   }
 }
