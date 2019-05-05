@@ -1,19 +1,29 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="html">
+
+  <div id="main">
+      <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <div id="banner">
+      <img id="pokemon" alt="pokemon" src="./assets/pokemon.png">
+    </div>
+    <router-view id="view"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      search: ''
+    }
+  },
+  computed: {
+
   }
+
 }
+
 </script>
 
 <style>
@@ -25,4 +35,26 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#main{
+  /* display: flex; */
+  /* justify-content: left; */
+  width: 100%;
+  background-color: #ffcc03;
+
+}
+
+#banner{
+  display: flex;
+  justify-content: center;
+}
+
+#pokemon{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+
 </style>
